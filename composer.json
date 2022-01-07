@@ -1,0 +1,26 @@
+{
+    "name": "thebiggive/messages",
+    "description": "Shared message / model classes for cross-service communication",
+    "type": "project",
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.0.2"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Messages\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Noel Light-Hilary",
+            "email": "noel@thebiggive.org.uk"
+        }
+    ]
+}
