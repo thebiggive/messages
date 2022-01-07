@@ -2,10 +2,6 @@
 
 namespace Messages;
 
-/**
- * For now, this is just a copy of `ClaimBot\Messenger\Donation`. We may want to think
- * about abstracting the model out to a shared dependency later.
- */
 class Donation
 {
     public string $id;
