@@ -19,4 +19,20 @@ class Donation
     public bool $sponsored = false;
     public string $org_hmrc_ref;
     public string $org_name;
+
+    /**
+     * @var string|null From HMRC acknowledgement. Used for subsequent polling status checks and HMRC contact.
+     */
+    public ?string $submissionCorrelationId = null;
+
+    /**
+     * @var bool|null  A minimal status flag: null when claim outcome is not yet determined, false for any
+     *                  kind of error and true for success.
+     */
+    public ?bool $responseSuccess = null;
+
+    /**
+     * @var string|null Once provided, finalised errors or "messages" value from HMRC.
+     */
+    public ?string $responseDetail = null;
 }
