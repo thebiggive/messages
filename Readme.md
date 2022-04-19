@@ -9,6 +9,18 @@ them with [ClaimBot](https://github.com/thebiggive/matchbot).
 
 ## Changelog
 
+### v3.0.0
+
+v3 adds `$org_regulator` and `$org_regulator_numbers`. These are technically
+optional, but ClaimBot v1.3 will send claims in a way that only works when
+they are set appropriately (except for exempt charities).
+
+As it is effectively therefore a breaking release of the model already, we
+have also taken the opportunity to make the feedback fields `$submission_correlation_id`,
+`$response_success` and `$response_detail` snake case for consistency
+with the other properties. Implementations using camel case will break
+immediately upon upgrade until they are updated.
+
 ### v2.0.0
 
 v2 comes alongside a new assumption about what it means for donations to be sent back
