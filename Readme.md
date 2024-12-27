@@ -9,6 +9,10 @@ them with [ClaimBot](https://github.com/thebiggive/matchbot).
 
 ## Changelog
 
+### v3.2.0
+
+Adds `Person` model.
+
 ### v3.1.0
 
 Adds `MessageId` stamp support. PHP minimum is now 8.3.
