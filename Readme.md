@@ -9,6 +9,10 @@ them with [ClaimBot](https://github.com/thebiggive/matchbot).
 
 ## Changelog
 
+### v3.3.0
+
+Adds `EmailVerificationToken` model.
+
 ### v3.2.0
 
 Adds `Person` model.
