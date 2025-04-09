@@ -5,8 +5,8 @@ namespace Messages;
 readonly class EmailVerificationToken
 {
     public function __construct(
-        string $randomCode,
-        string $emailAddress,
-        \DateTimeImmutable $createdAt,
+        public string $randomCode,
+        public string $emailAddress,
+        public \DateTimeImmutable $createdAt,
     ){}
 }
