@@ -3,8 +3,9 @@
 namespace Messages;
 
 use Ramsey\Uuid\UuidInterface;
+use Symfony\Component\Messenger\Bridge\AmazonSqs\MessageGroupAwareInterface;
 
-class Person
+class Person implements MessageGroupAwareInterface
 {
     public UuidInterface $id;
     public string $first_name;
@@ -19,4 +20,9 @@ class Person
     public ?string $home_address_line_1 = null;
     public ?string $home_postcode = null;
     public ?string $home_country_code = null;
+
+    public function getMessageGroupId(): ?string
+    {
+        return sha1($this->first_name . '•' . $this->email_address);
+    }
 }
