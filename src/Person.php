@@ -8,6 +8,7 @@ use Symfony\Component\Messenger\Bridge\AmazonSqs\MessageGroupAwareInterface;
 class Person implements MessageGroupAwareInterface
 {
     public UuidInterface $id;
+    public bool $deleted = false;
     public string $first_name;
     public string $last_name;
     public string $email_address;
@@ -23,6 +24,11 @@ class Person implements MessageGroupAwareInterface
 
     public function getMessageGroupId(): ?string
     {
+        if ($this->deleted) {
+            // if deleted, the details used below may not be set, so we use the ID instead
+            return sha1($this->id->toString());
+        }
+
         return sha1($this->first_name . '•' . $this->email_address);
     }
 }
