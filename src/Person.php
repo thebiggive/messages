@@ -21,6 +21,7 @@ class Person implements MessageGroupAwareInterface
     public ?string $home_address_line_1 = null;
     public ?string $home_postcode = null;
     public ?string $home_country_code = null;
+    public bool $is_organisation = false;
 
     public function getMessageGroupId(): ?string
     {
