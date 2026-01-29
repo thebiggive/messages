@@ -9,6 +9,10 @@ them with [ClaimBot](https://github.com/thebiggive/matchbot).
 
 ## Changelog
 
+### v3.4.0
+
+Add field Person::is_organisation
+
 ### v3.3.4
 
 Add support for deletion to `Person`.
