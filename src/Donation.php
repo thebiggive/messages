@@ -12,6 +12,7 @@ class Donation
     public string $title;
     public string $first_name;
     public string $last_name;
+    /** @var string Actually as much of an 'address line 1' fits in 40 characters. */
     public string $house_no;
     public string $postcode;
     public bool $overseas = false;
