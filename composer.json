@@ -5,10 +5,10 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
-        "php": "^8.3",
+        "php": "^8.5",
         "ramsey/uuid": "^4.7",
-        "symfony/amazon-sqs-messenger": "^7.1",
-        "symfony/messenger": "^7.1"
+        "symfony/amazon-sqs-messenger": ">=7.1",
+        "symfony/messenger": ">=7.1"
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest"
