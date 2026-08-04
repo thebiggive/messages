@@ -9,6 +9,11 @@ them with [ClaimBot](https://github.com/thebiggive/matchbot).
 
 ## Changelog
 
+### v4.0.0
+
+* Minimum PHP 8.5
+* Support Symfony 8.1
+
 ### v3.4.0
 
 Add field Person::is_organisation
